@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bamra Nursing College</title>
+    <meta name="description" content="Get in touch with Bamra Nursing College. Find our location on Google Maps, phone numbers, and our contact form.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .page-header {
+            padding: 10rem 5% 4rem;
+            background: linear-gradient(to right, rgba(183, 28, 28, 0.95), rgba(211, 47, 47, 0.85)), url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .page-header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #f1f5f9;
+        }
+        
+        .contact-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            height: 100%;
+            border-top: 4px solid var(--primary-red);
+            transition: var(--transition);
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-card.gold-border {
+            border-top-color: var(--gold);
+        }
+        
+        .contact-icon {
+            font-size: 2.5rem;
+            color: var(--primary-red);
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-card.gold-border .contact-icon {
+            color: var(--gold);
+        }
+        
+        .map-container {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 100%;
+            min-height: 400px;
+            border: 4px solid var(--white);
+        }
+        
+        .contact-form-wrapper {
+            background: var(--white);
+            padding: 3.5rem 3rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 50px; border-radius: 8px;">
+            <div class="brand-text-wrapper">
+                <span class="brand-title">Bamra Nursing College</span>
+                <span class="brand-subtitle">Govt. of Odisha Approved</span>
+            </div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1 class="fade-in appear">Get in Touch</h1>
+        <p class="fade-in appear" style="transition-delay: 0.1s;">Have questions about our programs or admission process? We're here to help.</p>
+    </header>
+
+    <main>
+        <!-- Contact Info Cards -->
+        <section class="section section-light" style="padding-bottom: 2rem;">
+            <div class="grid-3" style="max-width: 1200px; margin: -100px auto 0; position: relative; z-index: 10;">
+                
+                <!-- Phone -->
+                <div class="contact-card fade-in">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <h3 class="mb-3">Call Us</h3>
+                    <p class="text-muted mb-2">Speak to our admission counselors for immediate assistance.</p>
+                    <ul style="list-style: none; padding: 0; font-weight: 600; color: var(--text-main);">
+                        <li><a href="tel:9937673082" class="text-primary">+91 9937673082</a></li>
+                        <li><a href="tel:7855940601" class="text-primary">+91 7855940601</a></li>
+                        <li><a href="tel:8260905656" class="text-primary">+91 8260905656</a></li>
+                        <li><a href="tel:8249434387" class="text-primary">+91 8249434387</a></li>
+                    </ul>
+                </div>
+
+                <!-- Email / Operations -->
+                <div class="contact-card gold-border fade-in" style="transition-delay: 0.1s;">
+                    <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                    <h3 class="mb-3">Operating Hours</h3>
+                    <p class="text-muted mb-4">Our campus is open for visits and inquiries during the following hours:</p>
+                    <div style="font-weight: 600; color: var(--text-main);">
+                        <p class="mb-2">Monday - Saturday:<br><span class="text-gold">9:00 AM - 5:00 PM</span></p>
+                        <p>Sunday:<br><span class="text-muted" style="font-weight: 400;">Closed</span></p>
+                    </div>
+                </div>
+
+                <!-- Location -->
+                <div class="contact-card fade-in" style="transition-delay: 0.2s;">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3 class="mb-3">Our Location</h3>
+                    <p class="text-muted mb-0" style="line-height: 1.8;">
+                        Bamra Nursing College<br>
+                        Near Kali Mandir,<br> 
+                        Trust Fund College Road,<br> 
+                        Bamra – 768221 (Odisha)
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Form and Map Section -->
+        <section class="section section-bg">
+            <div class="grid-2" style="max-width: 1200px; margin: 0 auto; gap: 4rem;">
+                
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <div class="contact-form-wrapper">
+                        <span class="section-subtitle" style="text-align: left; display: block; margin-bottom: 0.5rem;">Send a Message</span>
+                        <h3 class="mb-4" style="font-size: 2.25rem;">We'd Love to Hear From You</h3>
+                        
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Your Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="How can we help?">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Your Message *</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Write your query here..." required style="resize: vertical;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Google Map Embed -->
+                <div class="fade-in" style="transition-delay: 0.2s;">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14902.138729221295!2d84.288283!3d22.044123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a20bf8fbdc2ec2f%3A0xc07ce6ad6ebf8b63!2sBamra%2C%20Odisha%20768221!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Maps Location for Bamra"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="nav-brand mb-3" style="color: white;">
+                    <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 45px; border-radius: 8px;">
+                    <div class="brand-text-wrapper">
+                        <span class="brand-title" style="color: white;">Bamra Nursing College</span>
+                    </div>
+                </div>
+                <p>Providing quality nursing education and shaping the healthcare leaders of tomorrow. Approved by Govt. of Odisha.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" style="padding-left: 2rem;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                    <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                    <li><a href="admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:9937673082"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 9937673082</a></li>
+                    <li><a href="tel:7855940601"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 7855940601</a></li>
+                    <li><a href="tel:8260905656"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8260905656</a></li>
+                    <li><a href="tel:8249434387"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8249434387</a></li>
+                    <li style="display: flex; align-items: flex-start; margin-top: 10px;">
+                        <i class="fas fa-map-marker-alt" style="margin-right:10px; color: var(--gold); margin-top: 5px;"></i> 
+                        <span>Near Kali Mandir, Trust Fund College Road, Bamra – 768221 (Odisha)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bamra Nursing College. All Rights Reserved. Designed for Excellence.</p>
+        </div>
+    </footer>
+</body>
+</html>

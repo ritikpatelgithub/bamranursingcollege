@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bamra Nursing College</title>
+    <meta name="description" content="Learn about Bamra Nursing College, our vision, mission, and our government-approved trust.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .page-header {
+            padding: 10rem 5% 4rem;
+            background: linear-gradient(to right, rgba(183, 28, 28, 0.95), rgba(211, 47, 47, 0.85)), url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .page-header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #f1f5f9;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        @media (max-width: 991px) {
+            .about-content { grid-template-columns: 1fr; gap: 2rem; }
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 50px; border-radius: 8px;">
+            <div class="brand-text-wrapper">
+                <span class="brand-title">Bamra Nursing College</span>
+                <span class="brand-subtitle">Govt. of Odisha Approved</span>
+            </div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1 class="fade-in appear">About Bamra College</h1>
+        <p class="fade-in appear" style="transition-delay: 0.1s;">Delivering excellence in nursing education and healthcare training since our inception.</p>
+    </header>
+
+    <main>
+        <!-- College Introduction -->
+        <section class="section section-light">
+            <div class="about-content">
+                <div class="fade-in">
+                    <span class="section-subtitle" style="text-align: left; display: block;">Who We Are</span>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Dedicated to Shaping<br><span class="text-primary">Exceptional Nurses</span></h2>
+                    <p class="text-muted mb-3" style="font-size: 1.1rem; line-height: 1.8;">Bamra Nursing College is a premier institution established with the core objective of imparting high-quality nursing education. We believe that nurses form the backbone of the healthcare system, and our thorough curriculum reflects our dedication to the highest medical standards.</p>
+                    <p class="text-muted mb-4" style="font-size: 1.1rem; line-height: 1.8;">Approved by the Health & Family Welfare Department and DMET, Government of Odisha, we provide a holistic learning environment. Our students are trained rigorously in theoretical knowledge and practical clinical procedures to prepare them for demanding roles in the real world.</p>
+                    <div class="grid-2">
+                        <div>
+                            <h4 class="text-gold mb-1"><i class="fas fa-check-circle"></i> Best Curriculum</h4>
+                            <p class="text-muted" style="font-size: 0.95rem;">Aligned closely with modern healthcare demands.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-gold mb-1"><i class="fas fa-check-circle"></i> Real-world Training</h4>
+                            <p class="text-muted" style="font-size: 0.95rem;">Extensive practical sessions in leading hospitals.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-in" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&w=800&q=80" alt="About College" style="border-radius: 12px; box-shadow: var(--shadow-xl);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision & Mission -->
+        <section class="section section-bg">
+            <div class="grid-2">
+                <div class="card p-0 fade-in" style="padding: 3rem; background: var(--white); border-top: 5px solid var(--primary-red);">
+                    <div style="font-size: 3rem; color: var(--primary-red); margin-bottom: 1rem;"><i class="fas fa-eye"></i></div>
+                    <h3 class="mb-3" style="font-size: 2rem;">Our Vision</h3>
+                    <p class="text-muted" style="font-size: 1.1rem; line-height: 1.8;">To emerge as a globally recognized center of excellence in nursing education and research. We envision our institution as the birthplace of compassionate, highly-skilled medical professionals who transform patient care standards locally and internationally.</p>
+                </div>
+                
+                <div class="card p-0 fade-in" style="padding: 3rem; background: var(--white); border-top: 5px solid var(--gold); transition-delay: 0.2s;">
+                    <div style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="mb-3" style="font-size: 2rem;">Our Mission</h3>
+                    <ul class="text-muted" style="font-size: 1.1rem; line-height: 1.8; list-style: none; padding-left: 0;">
+                        <li class="mb-2"><i class="fas fa-angle-right text-primary"></i> To provide value-based education driving clinical competence.</li>
+                        <li class="mb-2"><i class="fas fa-angle-right text-primary"></i> To bridge the gap between medical academics and practical hospital demands.</li>
+                        <li class="mb-2"><i class="fas fa-angle-right text-primary"></i> To foster ethical practice and empathy in all our graduates.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Approvals -->
+        <section class="section section-light">
+            <span class="section-subtitle">Credentials</span>
+            <h2 class="section-title">Trust & Approvals</h2>
+            
+            <div class="grid-2" style="align-items: center; max-width: 1000px; margin: 0 auto; background: var(--bg-light); padding: 3rem; border-radius: 16px;">
+                <div class="fade-in">
+                    <h3 class="mb-3">Government Recognition</h3>
+                    <p class="text-muted mb-4">Bamra Nursing College is fully authorized and operates under the strict guidelines formulated by the state health authorities.</p>
+                    <ul style="font-size: 1.1rem; font-weight: 500;">
+                        <li class="mb-3" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="width: 40px; height: 40px; background: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fas fa-certificate"></i></div>
+                            Approved by Health & Family Welfare (H & FW)
+                        </li>
+                        <li class="mb-3" style="display: flex; align-items: center; gap: 15px;">
+                            <div style="width: 40px; height: 40px; background: var(--gold); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i class="fas fa-landmark"></i></div>
+                            Recognized by DMET, Govt. of Odisha
+                        </li>
+                    </ul>
+                </div>
+                <div class="fade-in" style="transition-delay: 0.2s; text-align: center; border-left: 2px dashed #cbd5e1; padding-left: 3rem;">
+                    <i class="fas fa-shield-alt text-primary mb-3" style="font-size: 4rem;"></i>
+                    <h4 class="mb-2">Managed By</h4>
+                    <p class="text-muted mb-0">Run by a dedicated Trust Fund focused on empowering youth through medical education.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="nav-brand mb-3" style="color: white;">
+                    <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 45px; border-radius: 8px;">
+                    <div class="brand-text-wrapper">
+                        <span class="brand-title" style="color: white;">Bamra Nursing College</span>
+                    </div>
+                </div>
+                <p>Providing quality nursing education and shaping the healthcare leaders of tomorrow. Approved by Govt. of Odisha.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" style="padding-left: 2rem;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                    <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                    <li><a href="admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:9937673082"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 9937673082</a></li>
+                    <li><a href="tel:7855940601"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 7855940601</a></li>
+                    <li><a href="tel:8260905656"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8260905656</a></li>
+                    <li><a href="tel:8249434387"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8249434387</a></li>
+                    <li style="display: flex; align-items: flex-start; margin-top: 10px;">
+                        <i class="fas fa-map-marker-alt" style="margin-right:10px; color: var(--gold); margin-top: 5px;"></i> 
+                        <span>Near Kali Mandir, Trust Fund College Road, Bamra – 768221 (Odisha)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bamra Nursing College. All Rights Reserved. Designed for Excellence.</p>
+        </div>
+    </footer>
+</body>
+</html>

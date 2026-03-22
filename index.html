@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bamra Nursing College</title>
+    <meta name="description" content="Bamra Nursing College - Approved by H & FW, DMET Govt. of Odisha. Offering ANM and GNM courses with 100% Job Assistance.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        /* Hero Carousel Specific Styles */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            margin-top: -80px; /* Offset to sit behind navbar */
+        }
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+            z-index: 1;
+        }
+        .hero-slide.active {
+            opacity: 1;
+        }
+        .hero-slide::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.8));
+            z-index: 2;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            max-width: 900px;
+            padding: 0 5%;
+            color: var(--white);
+            margin-top: 80px;
+        }
+        .hero-content h1 {
+            font-size: 4rem;
+            margin: 1.5rem 0 1rem;
+            color: var(--white);
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+            letter-spacing: -1px;
+        }
+        .hero-content .lead {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            color: #f8fafc;
+            font-weight: 500;
+        }
+        .cta-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+            height: 280px;
+            box-shadow: var(--shadow-md);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+            padding: 3rem 1.5rem 1.5rem;
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transform: translateY(10px);
+            opacity: 0.9;
+            transition: var(--transition);
+        }
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-content .lead { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 50px; border-radius: 8px;">
+            <div class="brand-text-wrapper">
+                <span class="brand-title">Bamra Nursing College</span>
+                <span class="brand-subtitle">Govt. of Odisha Approved</span>
+            </div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <!-- Carousel Slides -->
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80');"></div>
+
+        <div class="hero-content fade-in appear">
+            <div class="mb-4">
+                <span class="badge badge-gold mb-2"><i class="fas fa-door-open"></i> Admission Open</span>
+                <span class="badge badge-red mb-2" style="margin-left: 10px;"><i class="fas fa-briefcase"></i> 100% Job Assistance</span>
+            </div>
+            
+            <h1>Future Healthcare Leaders<br>Start Here</h1>
+            <p class="lead">Approved by Health & Family Welfare Department and DMET, Govt. of Odisha. Offering practical clinical training and guaranteed placement assistance.</p>
+            
+            <div class="cta-group">
+                <a href="admission.html" class="btn btn-primary">Apply Now <i class="fas fa-arrow-right"></i></a>
+                <a href="contact.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.8); color: white;">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Highlights -->
+    <section class="section section-light">
+        <span class="section-subtitle">Our Programs</span>
+        <h2 class="section-title">Course Highlights</h2>
+        
+        <div class="grid-2">
+            <!-- ANM Card -->
+            <div class="card p-0 fade-in">
+                <div style="height: 250px; overflow: hidden; position: relative;">
+                    <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80" alt="ANM Course" style="width:100%; height:100%; object-fit:cover;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge badge-red">Only for Girls</span>
+                    </div>
+                </div>
+                <div style="padding: 2.5rem;">
+                    <h3 class="mb-2">ANM (Auxiliary Nursing Midwifery)</h3>
+                    <p class="text-muted mb-4">A comprehensive 2-year diploma program designed to train individuals to become competent auxiliary nurse midwives, preparing them for healthcare delivery in rural and urban settings.</p>
+                    <ul class="mb-4" style="color: var(--text-main);">
+                        <li class="mb-2"><i class="fas fa-clock text-primary"></i> <strong style="margin-left: 5px;">Duration:</strong> 2 Years</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong style="margin-left: 5px;">Eligibility:</strong> +2 Pass (Any Stream)</li>
+                    </ul>
+                    <a href="courses.html" class="btn btn-outline" style="width: 100%;">View Course Details</a>
+                </div>
+            </div>
+
+            <!-- GNM Card -->
+            <div class="card p-0 fade-in" style="transition-delay: 0.2s;">
+                <div style="height: 250px; overflow: hidden; position: relative;">
+                    <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80" alt="GNM Course" style="width:100%; height:100%; object-fit:cover;">
+                    <div style="position: absolute; top: 1rem; right: 1rem;">
+                        <span class="badge badge-gold">For Girls & Boys</span>
+                    </div>
+                </div>
+                <div style="padding: 2.5rem;">
+                    <h3 class="mb-2">GNM (General Nursing & Midwifery)</h3>
+                    <p class="text-muted mb-4">A 3-year extensive diploma program preparing dedicated students to function as efficient nurses in hospitals and communities. Focuses on patient care and advanced nursing protocols.</p>
+                    <ul class="mb-4" style="color: var(--text-main);">
+                        <li class="mb-2"><i class="fas fa-clock text-primary"></i> <strong style="margin-left: 5px;">Duration:</strong> 3 Years</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> <strong style="margin-left: 5px;">Eligibility:</strong> +2 Pass (Any Stream)</li>
+                    </ul>
+                    <a href="courses.html" class="btn btn-gold" style="width: 100%;">View Course Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section section-bg">
+        <span class="section-subtitle">Excellence in Education</span>
+        <h2 class="section-title">Why Choose Bamra?</h2>
+        
+        <div class="grid-4">
+            <div class="card fade-in" style="padding: 2.5rem; text-align: center;">
+                <div style="width: 70px; height: 70px; background-color: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1.5rem; box-shadow: 0 10px 15px -3px rgba(211,47,47,0.3);">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h4 class="mb-2">Govt. Approved</h4>
+                <p class="text-muted">Certified by H & FW, DMET Government of Odisha.</p>
+            </div>
+            
+            <div class="card fade-in" style="padding: 2.5rem; text-align: center; transition-delay: 0.1s;">
+                <div style="width: 70px; height: 70px; background-color: var(--gold); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1.5rem; box-shadow: 0 10px 15px -3px rgba(212,175,55,0.3);">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h4 class="mb-2">100% Placement</h4>
+                <p class="text-muted">Assured job assistance in top hospitals post-graduation.</p>
+            </div>
+            
+            <div class="card fade-in" style="padding: 2.5rem; text-align: center; transition-delay: 0.2s;">
+                <div style="width: 70px; height: 70px; background-color: var(--primary-red); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1.5rem; box-shadow: 0 10px 15px -3px rgba(211,47,47,0.3);">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h4 class="mb-2">Expert Faculty</h4>
+                <p class="text-muted">Learn from highly experienced professionals & doctors.</p>
+            </div>
+            
+            <div class="card fade-in" style="padding: 2.5rem; text-align: center; transition-delay: 0.3s;">
+                <div style="width: 70px; height: 70px; background-color: var(--gold); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; margin: 0 auto 1.5rem; box-shadow: 0 10px 15px -3px rgba(212,175,55,0.3);">
+                    <i class="fas fa-microscope"></i>
+                </div>
+                <h4 class="mb-2">Modern Labs</h4>
+                <p class="text-muted">State-of-the-art labs for hands-on clinical training.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Gallery -->
+    <section class="section section-light">
+        <span class="section-subtitle">Life at Bamra</span>
+        <h2 class="section-title">Campus & Facilities</h2>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in">
+                <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&w=600&q=80" alt="Students">
+                <div class="gallery-overlay">Empowered Students</div>
+            </div>
+            <div class="gallery-item fade-in" style="transition-delay: 0.1s;">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="Clinical Training">
+                <div class="gallery-overlay">Clinical Training</div>
+            </div>
+            <div class="gallery-item fade-in" style="transition-delay: 0.2s;">
+                <img src="https://images.unsplash.com/photo-1563200062-8e7c1f88ff05?auto=format&fit=crop&w=600&q=80" alt="Campus">
+                <div class="gallery-overlay">Beautiful Campus</div>
+            </div>
+            <div class="gallery-item fade-in" style="transition-delay: 0.3s;">
+                <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="Practical Labs">
+                <div class="gallery-overlay">Advanced Lab Equipment</div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4 fade-in">
+            <a href="facilities.html" class="btn btn-primary">View All Facilities <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="nav-brand mb-3" style="color: white;">
+                    <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 45px; border-radius: 8px;">
+                    <div class="brand-text-wrapper">
+                        <span class="brand-title" style="color: white;">Bamra Nursing College</span>
+                    </div>
+                </div>
+                <p>Providing quality nursing education and shaping the healthcare leaders of tomorrow. Approved by Govt. of Odisha.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" style="padding-left: 2rem;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                    <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                    <li><a href="admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:9937673082"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 9937673082</a></li>
+                    <li><a href="tel:7855940601"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 7855940601</a></li>
+                    <li><a href="tel:8260905656"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8260905656</a></li>
+                    <li><a href="tel:8249434387"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8249434387</a></li>
+                    <li style="display: flex; align-items: flex-start; margin-top: 10px;">
+                        <i class="fas fa-map-marker-alt" style="margin-right:10px; color: var(--gold); margin-top: 5px;"></i> 
+                        <span>Near Kali Mandir, Trust Fund College Road, Bamra – 768221 (Odisha)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bamra Nursing College. All Rights Reserved. Designed for Excellence.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Bamra Nursing College</title>
+    <meta name="description" content="Explore our nursing courses. We offer ANM and GNM diploma programs approved by the Government of Odisha.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .page-header {
+            padding: 10rem 5% 4rem;
+            background: linear-gradient(to right, rgba(183, 28, 28, 0.95), rgba(211, 47, 47, 0.85)), url('https://images.unsplash.com/photo-1576091160550-2173ff9e9e9c?auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .page-header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #f1f5f9;
+        }
+        
+        .course-card-detailed {
+            display: flex;
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 4rem;
+            border: 1px solid #f1f5f9;
+        }
+        
+        .course-img-wrapper {
+            flex: 0 0 45%;
+            position: relative;
+        }
+        
+        .course-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .course-details {
+            padding: 4rem 3rem;
+            flex: 1;
+        }
+        
+        .course-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+        
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        
+        .feature-title {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        .feature-val {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        @media (max-width: 991px) {
+            .course-card-detailed {
+                flex-direction: column;
+            }
+            .course-img-wrapper {
+                height: 300px;
+            }
+            .course-features {
+                grid-template-columns: 1fr;
+            }
+            .course-details {
+                padding: 2.5rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 50px; border-radius: 8px;">
+            <div class="brand-text-wrapper">
+                <span class="brand-title">Bamra Nursing College</span>
+                <span class="brand-subtitle">Govt. of Odisha Approved</span>
+            </div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1 class="fade-in appear">Academic Programs</h1>
+        <p class="fade-in appear" style="transition-delay: 0.1s;">Industry-focused nursing curricula designed for aspiring healthcare professionals.</p>
+    </header>
+
+    <main>
+        <section class="section section-light">
+            <div class="container" style="max-width: 1200px; margin: 0 auto;">
+                
+                <!-- ANM Course -->
+                <div class="course-card-detailed fade-in">
+                    <div class="course-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1000&q=80" alt="ANM Students">
+                        <div style="position: absolute; top: 1.5rem; left: 1.5rem;">
+                            <span class="badge badge-red" style="font-size: 1rem; padding: 0.5rem 1.2rem;">Only for Girls</span>
+                        </div>
+                    </div>
+                    <div class="course-details">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">ANM</h2>
+                        <h4 class="text-primary mb-3">Auxiliary Nursing Midwifery</h4>
+                        <p class="text-muted" style="font-size: 1.1rem; line-height: 1.7;">The ANM program is a comprehensive 2-year diploma designed to train individuals to become competent auxiliary nurse midwives. The curriculum focuses on preparing students to function as effective healthcare providers in rural and urban community settings, emphasizing maternal and child health.</p>
+                        
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <span class="feature-title">Duration</span>
+                                <span class="feature-val"><i class="fas fa-calendar-alt text-primary"></i> 2 Years Full-Time</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">Eligibility Criteria</span>
+                                <span class="feature-val"><i class="fas fa-graduation-cap text-primary"></i> +2 Pass (Any Stream)</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">Target Gender</span>
+                                <span class="feature-val"><i class="fas fa-female text-primary"></i> Exclusively for Females</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">Placement</span>
+                                <span class="feature-val"><i class="fas fa-briefcase text-primary"></i> 100% Job Assistance</span>
+                            </div>
+                        </div>
+                        
+                        <a href="admission.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2rem;">Apply for ANM Course</a>
+                    </div>
+                </div>
+
+                <!-- GNM Course -->
+                <div class="course-card-detailed fade-in" style="transition-delay: 0.2s;">
+                    <div class="course-details" style="order: 2;">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">GNM</h2>
+                        <h4 class="text-gold mb-3">General Nursing & Midwifery</h4>
+                        <p class="text-muted" style="font-size: 1.1rem; line-height: 1.7;">The GNM course is an extensive 3-year diploma program dedicated to preparing dedicated students into fully functional, efficient nurses. It offers heavy emphasis on hospital methodologies, surgical procedures, intensive care, and advanced nursing protocols necessary for large hospitals and clinics.</p>
+                        
+                        <div class="course-features" style="background: rgba(212, 175, 55, 0.05);">
+                            <div class="feature-item">
+                                <span class="feature-title">Duration</span>
+                                <span class="feature-val"><i class="fas fa-calendar-alt text-gold"></i> 3 Years Full-Time</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">Eligibility Criteria</span>
+                                <span class="feature-val"><i class="fas fa-graduation-cap text-gold"></i> +2 Pass (Any Stream)</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">Target Gender</span>
+                                <span class="feature-val"><i class="fas fa-users text-gold"></i> For Boys & Girls</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-title">Placement</span>
+                                <span class="feature-val"><i class="fas fa-briefcase text-gold"></i> 100% Job Assistance</span>
+                            </div>
+                        </div>
+                        
+                        <a href="admission.html" class="btn btn-gold" style="font-size: 1.1rem; padding: 1rem 2rem;">Apply for GNM Course</a>
+                    </div>
+                    <div class="course-img-wrapper" style="order: 1;">
+                        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1000&q=80" alt="GNM Students">
+                        <div style="position: absolute; top: 1.5rem; left: 1.5rem;">
+                            <span class="badge badge-gold" style="font-size: 1rem; padding: 0.5rem 1.2rem;">For Boys & Girls</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="nav-brand mb-3" style="color: white;">
+                    <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 45px; border-radius: 8px;">
+                    <div class="brand-text-wrapper">
+                        <span class="brand-title" style="color: white;">Bamra Nursing College</span>
+                    </div>
+                </div>
+                <p>Providing quality nursing education and shaping the healthcare leaders of tomorrow. Approved by Govt. of Odisha.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" style="padding-left: 2rem;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                    <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                    <li><a href="admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:9937673082"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 9937673082</a></li>
+                    <li><a href="tel:7855940601"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 7855940601</a></li>
+                    <li><a href="tel:8260905656"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8260905656</a></li>
+                    <li><a href="tel:8249434387"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8249434387</a></li>
+                    <li style="display: flex; align-items: flex-start; margin-top: 10px;">
+                        <i class="fas fa-map-marker-alt" style="margin-right:10px; color: var(--gold); margin-top: 5px;"></i> 
+                        <span>Near Kali Mandir, Trust Fund College Road, Bamra – 768221 (Odisha)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bamra Nursing College. All Rights Reserved. Designed for Excellence.</p>
+        </div>
+    </footer>
+</body>
+</html>

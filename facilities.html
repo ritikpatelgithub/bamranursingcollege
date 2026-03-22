@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities - Bamra Nursing College</title>
+    <meta name="description" content="Discover the world-class facilities at Bamra Nursing College including hostels, transport, labs, library, and clinical training.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        .page-header {
+            padding: 10rem 5% 4rem;
+            background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.8)), url('https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1920&q=80') center/cover;
+            color: white;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 3.5rem;
+            color: white;
+            margin-bottom: 1rem;
+        }
+        .page-header p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #f1f5f9;
+        }
+        
+        .facility-card {
+            background: var(--white);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            border: 1px solid #f1f5f9;
+        }
+        
+        .facility-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .facility-img {
+            height: 240px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .facility-content {
+            padding: 2rem;
+            position: relative;
+        }
+        
+        .facility-icon {
+            position: absolute;
+            top: -25px;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-red);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 10px rgba(211,47,47,0.4);
+            border: 3px solid var(--white);
+        }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 50px; border-radius: 8px;">
+            <div class="brand-text-wrapper">
+                <span class="brand-title">Bamra Nursing College</span>
+                <span class="brand-subtitle">Govt. of Odisha Approved</span>
+            </div>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="facilities.html" class="active">Facilities</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1 class="fade-in appear">Campus Facilities</h1>
+        <p class="fade-in appear" style="transition-delay: 0.1s;">A holistic environment equipped with modern infrastructure to ensure the best learning experience.</p>
+    </header>
+
+    <main>
+        <section class="section section-light">
+            <div class="grid-3" style="max-width: 1200px; margin: 0 auto;">
+                
+                <!-- Hostel -->
+                <div class="facility-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=600&q=80" alt="Hostel" class="facility-img">
+                    <div class="facility-content">
+                        <div class="facility-icon" style="background: var(--gold);"><i class="fas fa-bed"></i></div>
+                        <h3 class="mb-2">Hostel Accommodation</h3>
+                        <p class="text-muted">Separate, highly secure, and comfortable hostel facilities are available for both boys and girls. Equipped with modern amenities, study rooms, and hygienic mess facilities.</p>
+                    </div>
+                </div>
+
+                <!-- Transport -->
+                <div class="facility-card fade-in" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=600&q=80" alt="Transport" class="facility-img">
+                    <div class="facility-content">
+                        <div class="facility-icon"><i class="fas fa-bus"></i></div>
+                        <h3 class="mb-2">Transport Facility</h3>
+                        <p class="text-muted">Our dedicated fleet of buses ensures safe and timely transportation for students across various routes in the city, making daily commutes smooth and stress-free.</p>
+                    </div>
+                </div>
+
+                <!-- Practical Labs -->
+                <div class="facility-card fade-in" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1582719508461-905c673771fd?auto=format&fit=crop&w=600&q=80" alt="Practical Labs" class="facility-img">
+                    <div class="facility-content">
+                        <div class="facility-icon" style="background: var(--gold);"><i class="fas fa-microscope"></i></div>
+                        <h3 class="mb-2">Practical Labs</h3>
+                        <p class="text-muted">State-of-the-art anatomy, physiology, and fundamental nursing laboratories equipped with advanced mannequins and medical instruments for precise hands-on learning.</p>
+                    </div>
+                </div>
+
+                <!-- Library -->
+                <div class="facility-card fade-in">
+                    <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=600&q=80" alt="Library" class="facility-img">
+                    <div class="facility-content">
+                        <div class="facility-icon"><i class="fas fa-book-open"></i></div>
+                        <h3 class="mb-2">Central Library</h3>
+                        <p class="text-muted">A well-stocked library housing an extensive collection of medical journals, reference books, and digital resources to support the academic and research needs of students.</p>
+                    </div>
+                </div>
+
+                <!-- Clinical Training -->
+                <div class="facility-card fade-in" style="transition-delay: 0.1s;">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" alt="Clinical Training" class="facility-img">
+                    <div class="facility-content">
+                        <div class="facility-icon" style="background: var(--gold);"><i class="fas fa-stethoscope"></i></div>
+                        <h3 class="mb-2">Clinical Training</h3>
+                        <p class="text-muted">Robust tie-ups with leading multi-specialty government and private hospitals to provide students with rigorous real-world clinical exposure and patient care experience.</p>
+                    </div>
+                </div>
+
+                <!-- Smart Classrooms -->
+                <div class="facility-card fade-in" style="transition-delay: 0.2s;">
+                    <img src="https://images.unsplash.com/photo-1577412647305-991150c7d163?auto=format&fit=crop&w=600&q=80" alt="Classrooms" class="facility-img">
+                    <div class="facility-content">
+                        <div class="facility-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h3 class="mb-2">Smart Classrooms</h3>
+                        <p class="text-muted">Spacious, well-ventilated classrooms with digital projectors and smart boards designed to foster interactive and immersive theoretical learning sessions.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <div class="nav-brand mb-3" style="color: white;">
+                    <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 45px; border-radius: 8px;">
+                    <div class="brand-text-wrapper">
+                        <span class="brand-title" style="color: white;">Bamra Nursing College</span>
+                    </div>
+                </div>
+                <p>Providing quality nursing education and shaping the healthcare leaders of tomorrow. Approved by Govt. of Odisha.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-col" style="padding-left: 2rem;">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="courses.html"><i class="fas fa-chevron-right"></i> Courses</a></li>
+                    <li><a href="facilities.html"><i class="fas fa-chevron-right"></i> Facilities</a></li>
+                    <li><a href="admission.html"><i class="fas fa-chevron-right"></i> Admission</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:9937673082"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 9937673082</a></li>
+                    <li><a href="tel:7855940601"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 7855940601</a></li>
+                    <li><a href="tel:8260905656"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8260905656</a></li>
+                    <li><a href="tel:8249434387"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8249434387</a></li>
+                    <li style="display: flex; align-items: flex-start; margin-top: 10px;">
+                        <i class="fas fa-map-marker-alt" style="margin-right:10px; color: var(--gold); margin-top: 5px;"></i> 
+                        <span>Near Kali Mandir, Trust Fund College Road, Bamra – 768221 (Odisha)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bamra Nursing College. All Rights Reserved. Designed for Excellence.</p>
+        </div>
+    </footer>
+</body>
+</html>

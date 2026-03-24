@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission - Bamra Nursing College</title>
-    <meta name="description" content="Apply now for admission to Bamra Nursing College. View eligibility criteria and our seamless admission process.">
+    <meta name="description"
+        content="Apply now for admission to Bamra Nursing College. View eligibility criteria and our seamless admission process.">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <style>
@@ -14,18 +16,20 @@
             color: white;
             text-align: center;
         }
+
         .page-header h1 {
             font-size: 3.5rem;
             color: white;
             margin-bottom: 1rem;
         }
+
         .page-header p {
             font-size: 1.25rem;
             max-width: 600px;
             margin: 0 auto;
             color: #f1f5f9;
         }
-        
+
         .process-step {
             display: flex;
             gap: 1.5rem;
@@ -37,13 +41,13 @@
             border: 1px solid #f1f5f9;
             transition: var(--transition);
         }
-        
+
         .process-step:hover {
             transform: translateX(10px);
             box-shadow: var(--shadow-md);
             border-color: var(--gold);
         }
-        
+
         .step-number {
             width: 50px;
             height: 50px;
@@ -57,9 +61,9 @@
             font-size: 1.5rem;
             font-weight: bold;
             font-family: 'Outfit', sans-serif;
-            box-shadow: 0 4px 6px rgba(212,175,55,0.3);
+            box-shadow: 0 4px 6px rgba(212, 175, 55, 0.3);
         }
-        
+
         .admission-form-container {
             background: var(--white);
             border-radius: 16px;
@@ -67,25 +71,32 @@
             box-shadow: var(--shadow-lg);
             border-top: 5px solid var(--primary-red);
         }
-        
+
         @media (max-width: 768px) {
-            .process-step { flex-direction: column; gap: 1rem; }
-            .admission-form-container { padding: 2rem 1.5rem; }
+            .process-step {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .admission-form-container {
+                padding: 2rem 1.5rem;
+            }
         }
     </style>
 </head>
+
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
 
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-brand">
-            <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 50px; border-radius: 8px;">
+            <i class="fas fa-user-nurse logo-icon"></i>
             <div class="brand-text-wrapper">
                 <span class="brand-title">Bamra Nursing College</span>
                 <span class="brand-subtitle">Govt. of Odisha Approved</span>
             </div>
         </div>
-        
+
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
@@ -94,7 +105,7 @@
             <li><a href="admission.html" class="active">Admission</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        
+
         <div class="hamburger">
             <span></span>
             <span></span>
@@ -105,24 +116,29 @@
     <!-- Page Header -->
     <header class="page-header">
         <h1 class="fade-in appear">Admissions Open</h1>
-        <p class="fade-in appear" style="transition-delay: 0.1s;">Take the first step towards a rewarding career in healthcare. Enroll today.</p>
+        <p class="fade-in appear" style="transition-delay: 0.1s;">Take the first step towards a rewarding career in
+            healthcare. Enroll today.</p>
     </header>
 
     <main>
         <section class="section section-bg">
             <div class="grid-2" style="max-width: 1200px; margin: 0 auto; gap: 4rem;">
-                
+
                 <!-- Guidelines & Info -->
                 <div class="fade-in">
                     <span class="section-subtitle" style="text-align: left; display: block;">Join Us</span>
                     <h2 class="mb-4" style="font-size: 2.5rem;">Admission Procedure</h2>
-                    
-                    <div class="mb-4 p-3" style="background: rgba(211,47,47,0.05); border-left: 4px solid var(--primary-red); border-radius: 4px;">
+
+                    <div class="mb-4 p-3"
+                        style="background: rgba(211,47,47,0.05); border-left: 4px solid var(--primary-red); border-radius: 4px;">
                         <h4 class="text-primary mb-2">Eligibility Criteria</h4>
                         <ul style="list-style: none; padding-left: 0; color: var(--text-main);">
-                            <li class="mb-2"><i class="fas fa-check text-primary mr-2" style="margin-right: 8px;"></i> Successful completion of 10+2 (Any Stream) from a recognized board.</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary mr-2" style="margin-right: 8px;"></i> Must meet age criteria as per Indian Nursing Council rules.</li>
-                            <li class="mb-2"><i class="fas fa-check text-primary mr-2" style="margin-right: 8px;"></i> Physically and mentally fit.</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary mr-2" style="margin-right: 8px;"></i>
+                                Successful completion of 10+2 (Any Stream) from a recognized board.</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary mr-2" style="margin-right: 8px;"></i>
+                                Must meet age criteria as per Indian Nursing Council rules.</li>
+                            <li class="mb-2"><i class="fas fa-check text-primary mr-2" style="margin-right: 8px;"></i>
+                                Physically and mentally fit.</li>
                         </ul>
                     </div>
 
@@ -131,23 +147,26 @@
                         <div class="step-number">1</div>
                         <div>
                             <h4 class="mb-1">Submit Application</h4>
-                            <p class="text-muted mb-0">Fill out the quick online application form provided here with accurate details.</p>
+                            <p class="text-muted mb-0">Fill out the quick online application form provided here with
+                                accurate details.</p>
                         </div>
                     </div>
-                    
+
                     <div class="process-step">
                         <div class="step-number">2</div>
                         <div>
                             <h4 class="mb-1">Counseling Session</h4>
-                            <p class="text-muted mb-0">Our admission counselor will contact you to discuss your career goals and course suitability.</p>
+                            <p class="text-muted mb-0">Our admission counselor will contact you to discuss your career
+                                goals and course suitability.</p>
                         </div>
                     </div>
-                    
+
                     <div class="process-step">
                         <div class="step-number">3</div>
                         <div>
                             <h4 class="mb-1">Document Verification</h4>
-                            <p class="text-muted mb-0">Submit 10th/12th marksheets, ID proof, and photographs at the college admissions desk.</p>
+                            <p class="text-muted mb-0">Submit 10th/12th marksheets, ID proof, and photographs at the
+                                college admissions desk.</p>
                         </div>
                     </div>
 
@@ -155,7 +174,8 @@
                         <div class="step-number">4</div>
                         <div>
                             <h4 class="mb-1">Enrollment & Seat Confirmation</h4>
-                            <p class="text-muted mb-0">Pay the admission fees to finalize your seat and collect your enrollment kit.</p>
+                            <p class="text-muted mb-0">Pay the admission fees to finalize your seat and collect your
+                                enrollment kit.</p>
                         </div>
                     </div>
                 </div>
@@ -165,26 +185,30 @@
                     <div class="admission-form-container">
                         <h3 class="mb-2 text-center">Apply Online Now</h3>
                         <p class="text-center text-muted mb-4">Fill the form and we will call you back right away!</p>
-                        
+
                         <form id="admissionForm">
                             <div class="form-group">
                                 <label for="name" class="form-label">Full Name *</label>
-                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                                <input type="text" id="name" name="name" class="form-control"
+                                    placeholder="Enter your full name" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="phone" class="form-label">Phone Number *</label>
-                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your 10-digit mobile number" required>
+                                <input type="tel" id="phone" name="phone" class="form-control"
+                                    placeholder="Enter your 10-digit mobile number" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="email" class="form-label">Email Address *</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="Enter your email" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="course" class="form-label">Course Interested In *</label>
-                                <select id="course" class="form-control" required style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231e293b%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat, repeat; background-position: right .7em top 50%, 0 0; background-size: .65em auto, 100%;">
+                                <select id="course" class="form-control" required
+                                    style="appearance: none; background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%231e293b%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'); background-repeat: no-repeat, repeat; background-position: right .7em top 50%, 0 0; background-size: .65em auto, 100%;">
                                     <option value="" disabled selected>Select a Course</option>
                                     <option value="ANM">ANM (Auxiliary Nursing Midwifery)</option>
                                     <option value="GNM">GNM (General Nursing & Midwifery)</option>
@@ -193,10 +217,13 @@
 
                             <div class="form-group">
                                 <label for="admsn_message" class="form-label">Optional Message</label>
-                                <textarea id="admsn_message" class="form-control" rows="3" placeholder="Any queries or special requirements?" style="resize: vertical;"></textarea>
+                                <textarea id="admsn_message" class="form-control" rows="3"
+                                    placeholder="Any queries or special requirements?"
+                                    style="resize: vertical;"></textarea>
                             </div>
 
-                            <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
+                            <button type="submit" class="btn btn-primary"
+                                style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
                                 Submit Application <i class="fas fa-paper-plane"></i>
                             </button>
                         </form>
@@ -211,12 +238,13 @@
         <div class="footer-top">
             <div class="footer-col">
                 <div class="nav-brand mb-3" style="color: white;">
-                    <img src="bamralogo.jpeg" alt="Bamra Nursing College Logo" style="height: 45px; border-radius: 8px;">
+                    <i class="fas fa-user-nurse logo-icon" style="color: var(--gold); font-size: 2rem;"></i>
                     <div class="brand-text-wrapper">
                         <span class="brand-title" style="color: white;">Bamra Nursing College</span>
                     </div>
                 </div>
-                <p>Providing quality nursing education and shaping the healthcare leaders of tomorrow. Approved by Govt. of Odisha.</p>
+                <p>Providing quality nursing education and shaping the healthcare leaders of tomorrow. Approved by Govt.
+                    of Odisha.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -237,12 +265,17 @@
             <div class="footer-col">
                 <h4>Contact Info</h4>
                 <ul class="footer-links">
-                    <li><a href="tel:9937673082"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 9937673082</a></li>
-                    <li><a href="tel:7855940601"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 7855940601</a></li>
-                    <li><a href="tel:8260905656"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8260905656</a></li>
-                    <li><a href="tel:8249434387"><i class="fas fa-phone-alt" style="margin-right:10px; color: var(--gold);"></i> +91 8249434387</a></li>
+                    <li><a href="tel:9937673082"><i class="fas fa-phone-alt"
+                                style="margin-right:10px; color: var(--gold);"></i> +91 9937673082</a></li>
+                    <li><a href="tel:7855940601"><i class="fas fa-phone-alt"
+                                style="margin-right:10px; color: var(--gold);"></i> +91 7855940601</a></li>
+                    <li><a href="tel:8260905656"><i class="fas fa-phone-alt"
+                                style="margin-right:10px; color: var(--gold);"></i> +91 8260905656</a></li>
+                    <li><a href="tel:8249434387"><i class="fas fa-phone-alt"
+                                style="margin-right:10px; color: var(--gold);"></i> +91 8249434387</a></li>
                     <li style="display: flex; align-items: flex-start; margin-top: 10px;">
-                        <i class="fas fa-map-marker-alt" style="margin-right:10px; color: var(--gold); margin-top: 5px;"></i> 
+                        <i class="fas fa-map-marker-alt"
+                            style="margin-right:10px; color: var(--gold); margin-top: 5px;"></i>
                         <span>Near Kali Mandir, Trust Fund College Road, Bamra – 768221 (Odisha)</span>
                     </li>
                 </ul>
@@ -253,4 +286,5 @@
         </div>
     </footer>
 </body>
+
 </html>
